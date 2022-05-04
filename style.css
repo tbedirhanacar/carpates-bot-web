@@ -16,6 +16,22 @@
  }
 
  @media (max-device-width: 600px) {
+
+            span {
+                position: relative;
+                top: 2.2vh;
+            }
+ }
+
+ @media (min-device-width: 601px) and (max-device-width: 900px){
+    span {
+        position: relative;
+        top: 2vw;
+    }
+
+ }
+
+ @media (max-device-width: 900px){
     .header{
         /* background-color: rebeccapurple; */
         width: 70vw;
@@ -83,19 +99,14 @@
             .btn:hover::after{
                 transform: translateX(-330px);
             }
-            span {
-                position: relative;
-                top: 2.2vh;
-            }
-
             .footer{
-                margin-bottom: -5%;
+                margin-bottom: 0;
                 position: absolute;
                 color: azure;
                 text-align:center;
                 bottom: 0vh;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0%);
                 font-family: 'sfProRegular';
                 font-size: 11px;
             }
@@ -109,7 +120,7 @@
     
  }
 
- @media (min-device-width: 601px) {
+ @media (min-device-width: 901px) {
     .header{
         width: 60vw;
         height: 35vw;
