@@ -1,0 +1,205 @@
+@import "bourbon";
+
+@font-face {
+    src: url(sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF);
+    font-family: sfProBlack;
+}
+
+@font-face {
+    src: url(sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF);
+    font-family: sfProRegular;
+}
+
+ html{
+     background-color: black;
+
+ }
+
+ @media (max-device-width: 600px) {
+    .header{
+        /* background-color: rebeccapurple; */
+        width: 70vw;
+        height: 90vw;
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+    }
+    .pfp{
+        /* background-color: red; */
+        width: 60vw;
+        height: 60vw;
+        margin: auto;
+    }
+    img{
+        width: inherit;
+    }
+    .title{
+        text-align: center;
+        margin-top: -5%;
+        margin-bottom: 0;
+        font-size: 14vw;
+        color: azure;
+        font-family: 'sfProBlack';
+    }
+    /* ------ button ------- */
+
+
+    .button-container {
+        position: absolute;
+        margin-top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    
+        .btn {
+        display: block;
+        height: 8vh;
+        width: 60vw;
+        position: relative;
+        overflow: hidden;
+        font-family: 'sfProBlack';
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        font-size: 3vh;
+        text-align: center;
+        }
+        
+            .btn:after {
+                position: absolute;
+                content:'';
+                display: inline-block;
+                background: rgba(59,173,227,1);
+                background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
+                height: 70px;
+                width: 600px;
+                z-index: -1;
+                transform: translateX(-400px);
+                transition: transform 400ms ease-in;
+            }
+            
+            .btn:hover::after{
+                transform: translateX(-330px);
+            }
+            span {
+                position: relative;
+                top: 2.2vh;
+            }
+
+            .footer{
+                margin-bottom: -5%;
+                position: absolute;
+                color: azure;
+                text-align:center;
+                bottom: 0vh;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'sfProRegular';
+                font-size: 11px;
+            }
+            .footer a i{
+                text-decoration: none;
+                color: azure;
+                font-size: 20px;
+                
+            }
+        
+    
+ }
+
+ @media (min-device-width: 601px) {
+    .header{
+        width: 60vw;
+        height: 35vw;
+        position: absolute;
+        left: 50%;
+        top: 37%;
+        transform: translate(-50%, -50%);
+    }
+    .pfp{
+        margin: auto;
+        width: 45vh;
+        height: 25vw;
+    }
+    img{
+        width: inherit;
+    }
+    .title{
+        text-align: center;
+        margin-top: -5%;
+        margin-bottom: 5%;
+        font-size: 9vh;
+        color: azure;
+        font-family: 'sfProBlack';
+    }
+
+    /* ------ button ------- */
+
+
+    .button-container {
+    position: absolute;
+    padding: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    .btn {
+    display: block;
+    height: 70px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'sfProBlack';
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    }
+    
+        .btn:after {
+            position: absolute;
+            content:'';
+            display: inline-block;
+            background: rgba(59,173,227,1);
+            background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
+            height: 70px;
+            width: 600px;
+            z-index: -1;
+            transform: translateX(-400px);
+            transition: transform 400ms ease-in;
+        }
+        
+        .btn:hover::after{
+            transform: translateX(-330px);
+        }
+        span {
+            position: relative;
+            top: 18px;
+        }
+
+        .footer{
+            margin-bottom: -2%;
+            position: absolute;
+            color: azure;
+            text-align:center;
+            bottom: 0vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'sfProRegular';
+            font-size: 13px;
+        }
+        .footer a i{
+            text-decoration: none;
+            color: azure;
+            font-size: 30px;
+        }
+ }
+
+ 
+ 
+
+ 
