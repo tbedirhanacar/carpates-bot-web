@@ -22,6 +22,13 @@
 
  }
 
+ .komutlar{
+    text-decoration: none;
+    color: azure;
+}
+
+
+
  @media (max-device-width: 600px) {
 
             span {
@@ -39,6 +46,37 @@
  }
 
  @media (max-device-width: 900px){
+
+    h1 strong{
+        font-size: larger;
+    }
+
+    strong{
+        font-family: 'sfProBlack';
+        font-size: medium;
+    }
+
+    p{
+        font-size: small;
+    }
+    
+    .markdown-preview{
+        top: 5vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: absolute;
+        overflow: auto;
+        max-height: 70vh;
+        border-radius: 10px;
+        margin: auto;
+        width: 80vw;
+        background-color: rgb(35, 35, 35);
+        padding: 5px;
+        font-family: 'sfProRegular';
+        text-decoration-style: dotted;
+        color: azure;
+    }
+
     .header{
         /* background-color: rebeccapurple; */
         width: 70vw;
@@ -55,6 +93,7 @@
         margin: auto;
     }
     img{
+        border-radius: 50%;
         width: inherit;
     }
     .title{
@@ -66,6 +105,15 @@
         font-family: 'sfProBlack';
     }
     /* ------ button ------- */
+
+    .button-invite{
+        left: 50%;
+        transform: translate(-50%);
+        height: 17%;
+        bottom: 0;    
+        position: absolute;
+    }
+
 
 
     .button-container {
@@ -117,17 +165,74 @@
                 font-family: 'sfProRegular';
                 font-size: 11px;
             }
-            .footer a i{
+            .git{
                 text-decoration: none;
                 color: azure;
                 font-size: 20px;
                 
+            }
+
+            .help{
+    
+                text-align: center;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                color: azure;
+            }
+            
+            .help h2{
+                font-size: 6vw;
+                font-family: 'sfProRegular';
+            }
+            
+            .help h1{
+                margin-top: 0;
+                font-size: 12vw;
+                font-family: 'sfProBlack';
+            }
+    
+            .help img{
+                width: 30vh;
             }
         
     
  }
 
  @media (min-device-width: 901px) {
+
+    
+
+    h1 strong{
+        font-size: larger;
+    }
+
+    strong{
+        font-family: 'sfProBlack';
+        font-size: medium;
+    }
+
+    p{
+        font-size: small;
+    }
+    
+    .markdown-preview{
+        top: 5vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: absolute;
+        overflow: auto;
+        max-height: 70vh;
+        border-radius: 10px;
+        width: 90vw;
+        background-color: rgb(35, 35, 35);
+        padding: 5px;
+        font-family: 'sfProRegular';
+        text-decoration-style: dotted;
+        color: azure;
+    }
+
     .header{
         width: 60vw;
         height: 35vw;
@@ -142,6 +247,7 @@
         height: 25vw;
     }
     img{
+        border-radius: 50%;
         width: inherit;
     }
     .title{
@@ -154,6 +260,14 @@
     }
 
     /* ------ button ------- */
+
+    .button-invite{
+        left: 50%;
+        transform: translate(-50%);
+        height: 17%;
+        bottom: 0;    
+        position: absolute;
+    }
 
 
     .button-container {
@@ -210,11 +324,37 @@
             font-family: 'sfProRegular';
             font-size: 13px;
         }
-        .footer a i{
+        .git{
             text-decoration: none;
             color: azure;
             font-size: 30px;
         }
+
+        .help{
+    
+            text-align: center;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            color: azure;
+        }
+        
+        .help h2{
+            font-size: 1.5vw;
+            font-family: 'sfProRegular';
+        }
+        
+        .help h1{
+            margin-top: 0;
+            font-size: 6vw;
+            font-family: 'sfProBlack';
+        }
+
+        .help img{
+            width: 20vw;
+        }
+
  }
 
 
